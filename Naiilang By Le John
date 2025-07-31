@@ -1,0 +1,82 @@
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C LCD(0x27, 16, 2);
+
+void setup() {
+  LCD.init();
+  LCD.backlight();
+}
+
+void loop() {
+  LCD.clear();
+  LCD.setCursor(1, 0);
+  LCD.print("alam ko naman");
+  delay(2900);
+
+  LCD.setCursor(1, 1);
+  LCD.print("kaibigan tayo");
+  delay(3700);
+
+  LCD.clear();
+  LCD.setCursor(1, 0);
+  LCD.print("kasalanan bang");
+  delay(2000);
+
+  LCD.setCursor(0, 1);
+  LCD.print("mahulog sa'yo?");
+  delay(2800);
+
+  LCD.clear();
+  LCD.setCursor(2, 0);
+  LCD.print("tumingin ka");
+  delay(2300);
+
+  LCD.setCursor(3, 1);
+  LCD.print("sa akin");
+  delay(1300);
+
+  LCD.clear();
+  LCD.setCursor(3, 0);
+  LCD.print("gusto kong");
+  delay(1600);
+
+  LCD.setCursor(4, 1);
+  LCD.print("linawin");
+  delay(1300);
+
+  LCD.clear();
+  LCD.setCursor(1, 0);
+  LCD.print("naiilang ka ba");
+  delay(2300);
+
+  LCD.setCursor(3, 1);
+  LCD.print("pag tayo");
+  delay(1300);
+
+  LCD.clear();
+  LCD.setCursor(2, 0);
+  LCD.print("lang dalawa?");
+  delay(1800);
+
+  LCD.setCursor(2, 1);
+  LCD.print("sinasabi ko");
+  delay(1000);
+
+  LCD.clear();
+  LCD.setCursor(2, 0);
+  LCD.print("nga na atin");
+  delay(1800);
+
+  LCD.setCursor(3, 1);
+  LCD.print("ang mundo");
+  delay(2800);
+
+  LCD.clear();
+  LCD.setCursor(2, 0);
+  LCD.print("walang iba");
+  delay(1300);
+
+  LCD.setCursor(4, 1);
+  LCD.print("tulad mo");
+  delay(4800); 
+}
