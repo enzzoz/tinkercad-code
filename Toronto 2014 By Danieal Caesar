@@ -1,0 +1,69 @@
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C LCD(0x27, 16, 2);
+
+void setup() {
+  LCD.init();
+  LCD.backlight();
+}
+
+void loop() {
+  LCD.clear();
+  LCD.setCursor(0, 0);
+  LCD.print("You know, Stock");
+  delay(700);
+
+  LCD.setCursor(0, 1);
+  LCD.print("holm, long roads,");
+  delay(600);
+  
+  LCD.clear();
+  LCD.setCursor(0, 0);
+  LCD.print("on go You");
+  delay(700);
+  
+  LCD.setCursor(0, 1);
+  LCD.print("can't even");
+  delay(700);
+        
+  LCD.clear();
+  LCD.setCursor(0, 0);
+  LCD.print("reach me");
+  delay(800);
+        
+  LCD.setCursor(0, 1);
+  LCD.print("Just know,");
+  delay(900); 
+        
+  LCD.clear();
+  LCD.setCursor(0, 0);
+  LCD.print("whenever you");
+  delay(600);
+ 
+  LCD.setCursor(0, 1);
+  LCD.print("need me");
+  delay(900);
+        
+  LCD.clear();
+  LCD.setCursor(0, 0);
+  LCD.print("we'll figure");
+  delay(600);
+
+  LCD.setCursor(0, 1);
+  LCD.print("it out");
+  delay(500);
+ 
+  LCD.clear();
+  LCD.setCursor(0, 0);
+  LCD.print("Look up and");
+  delay(800);
+        
+  LCD.setCursor(0, 1);
+  LCD.print("you'll see me,");
+  delay(900);
+
+  LCD.clear();
+  LCD.setCursor(0, 0);
+  LCD.print("I'll be around");
+  delay(900);
+}
